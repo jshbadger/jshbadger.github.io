@@ -1,4 +1,4 @@
-baseURL = 'https://jacobstewart.org/'
+baseURL = 'https://jshbadger.github.io/'
 languageCode = 'en-us'
 title = 'Jacob Stewart'
 theme = 'typo'
