@@ -21,10 +21,11 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = 'Jacob Stewart'
 homeIntroContent = """
-![Headshot](/img/stock-photo-average-portrait-of-european-smiling-man-in-clean-white-blank-t-shirt-shows-her-hands-on-his-chest-1558667855.jpg)
+![Headshot](/img/JacobHeadshot.jpg)
+
 Undergraduate in Electrical Engineering at the University of Colorado at Boulder.
 
-You can learn about me on the [About page]({{< ref "/about/index.md" >}}), [contact me]({{< ref "/contact/index.md" >}}), or check out the [projects]({{< ref "/projects/" >}}) have and am currently working on.
+You can learn about me on the [About page]({{< ref "/about/index.md" >}}), [contact me]({{< ref "/contact/index.md" >}}), or check out the [projects]({{< ref "/projects/" >}}) I have completed and am currently working on.
 """
 # Is it "in" or "of" for undergraduate ___ EE
 
