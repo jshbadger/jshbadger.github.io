@@ -1,0 +1,82 @@
+baseURL = 'https://jacobstewart.org/'
+languageCode = 'en-us'
+title = 'Jacob Stewart'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "Personal Info and Portfolio"
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'gruvebox'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Jacob Stewart'
+homeIntroContent = """
+![Headshot](/img/stock-photo-average-portrait-of-european-smiling-man-in-clean-white-blank-t-shirt-shows-her-hands-on-his-chest-1558667855.jpg)
+Undergraduate in Electrical Engineering at the University of Colorado at Boulder.
+
+You can learn about me on the [About page]({{< ref "/about/index.md" >}}), [contact me]({{< ref "/contact/index.md" >}}), or check out the [projects]({{< ref "/projects/" >}}) have and am currently working on.
+"""
+# Is it "in" or "of" for undergraduate ___ EE
+
+# Collection to display on home
+# homeCollectionTitle = 'Projects'
+# homeCollection = '/projects'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2006 Jan 8'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Social icons
+[[params.social]]
+name = "email"
+url = "mailto:stewar.jacob@proton.me"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/jshbadger"
+
+# Main menu pages
+[[params.menu]]
+name = "Home"
+url = "/"
+
+[[params.menu]]
+name = "About"
+url = "/about/"
+
+[[params.menu]]
+name = "Contact"
+url = "/contact/"
+
+[[params.menu]]
+name = "Projects"
+url = "/projects/"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
