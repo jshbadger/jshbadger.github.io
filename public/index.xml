@@ -2,32 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Jacob Stewart</title>
-    <link>https://jshbadger.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on Jacob Stewart</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jshbadger.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Aug 2024 13:16:49 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIY Numpad</title>
+      <link>http://localhost:1313/projects/numpad/</link>
+      <pubDate>Fri, 30 Aug 2024 13:16:49 -0600</pubDate>
+      <guid>http://localhost:1313/projects/numpad/</guid>
+      <description>&lt;p&gt;The goal of this project was simple: I want a numpad. Unfortunately, it was rapidly complicated by just a couple criteria.&lt;/p&gt;&#xA;&lt;p&gt;The first additional criteria is that it had to be wireless. Due to my class schedule, I am constantly moving around campus. Thus, everything that I need to use must be able to fit into my backpack. This doesn&amp;rsquo;t make wireless strictly necessary, but when the time spent at a desk is 30 minutes, it becomes difficult to justify taking out a cable just to use a numpad. A wireless numpad, however, that just requires the flick of a switch to turn on, encourages the usage of the numpad.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Log-Structured Merge Tree</title>
-      <link>https://jshbadger.github.io/posts/sample/</link>
+      <link>http://localhost:1313/posts/sample/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://jshbadger.github.io/posts/sample/</guid>
+      <guid>http://localhost:1313/posts/sample/</guid>
       <description>An LSM Tree overview and Java implementation.</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://jshbadger.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jshbadger.github.io/about/</guid>
-      <description></description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Through high school and early college, I focused mainly on music, in particular violin and piano. Music is a wonderful undertaking, as it&amp;rsquo;s always engauging, and it taught me how to work hard and develop skills. Also early in my college career I became invested in Blender and 3D modelling and animation. Though just an amateur, through the process of creating an artifical reality, I&amp;rsquo;ve gained a deeper appreciation and understanding of the reality we go through everyday.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact Information</title>
-      <link>https://jshbadger.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jshbadger.github.io/contact/</guid>
-      <description>I intentionally avoid social media. Because the user does not pay in cash to use the service, the service must use the user. Thus, if you wish to reach out to me, you can do so by my email.</description>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;I intentionally avoid social media. Thus, if you wish to reach out to me, the easiest way will likely be &lt;a href=&#34;mailto:stewar.jacob@proton.me&#34;&gt;email&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;If you would like to meet with me, you can schedule an appointment through &lt;a href=&#34;https://cal.com/jacobst&#34;&gt;Cal.com&lt;/a&gt;. In the appointment, please specify how you would like to meet (in-person, Zoom, or if you&amp;rsquo;re willing to experiment with me, Cal&amp;rsquo;s built in video conferencing service). If you would like to meet for longer than 30 minutes, please email me and we can arrange the time and place. Please arranage the appointment the day before, as if you arrange the meeting the day of, I can&amp;rsquo;t guarantee that I will be available for the meeting.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
