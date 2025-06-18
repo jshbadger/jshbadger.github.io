@@ -2,6 +2,10 @@ baseURL = 'https://jshbadger.github.io/'
 languageCode = 'en-us'
 title = 'Jacob Stewart'
 theme = 'typo'
+enableGitInfo = true
+
+[frontmatter]
+lastmod = ['lastmod', ':fileModTime', ':default']
 
 [taxonomies]
 tag = 'tags'
@@ -13,7 +17,6 @@ googleAnalytics = "G-xxxxxxxxx"
 # Meta description
 description = "Personal Info and Portfolio"
 
-enableGitInfo = true
 
 # Appearance settings
 theme = 'auto'
@@ -25,9 +28,9 @@ homeIntroTitle = 'Jacob Stewart'
 homeIntroContent = """
 ![Headshot](/img/JacobHeadshot.jpg)
 
-Undergraduate in Electrical Engineering at the University of Colorado at Boulder.
+Hello! I am Jacob Stewart, a PhD student in Electrical Engineering at the University of Colorado at Boulder. My interests are mostly in technology, with particular interest in presenting information effectively, working efficiently, and understanding the nuances. My goal going into engineering was to be able to build anything. Now I want to build it better.
 
-You can learn about me on the [About page]({{< ref "/about/index.md" >}}), [contact me]({{< ref "/contact/index.md" >}}), or check out the [projects]({{< ref "/projects/" >}}) I have completed and am currently working on.
+You can learn more about me on the [About page]({{< ref "/about/index.md" >}}), [contact me]({{< ref "/contact/index.md" >}}), or check out the [projects]({{< ref "/projects/" >}}) I have completed and am currently working on.
 """
 # Is it "in" or "of" for undergraduate ___ EE
 
@@ -38,7 +41,7 @@ You can learn about me on the [About page]({{< ref "/about/index.md" >}}), [cont
 # Lists parameters
 paginationSize = 100
 listSummaries = true
-listDateFormat = '2006 Jan 8'
+listDateFormat = '2006 Jan 02'
 
 # Breadcrumbs
 breadcrumbs = true
