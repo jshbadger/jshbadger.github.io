@@ -13,6 +13,8 @@ googleAnalytics = "G-xxxxxxxxx"
 # Meta description
 description = "Personal Info and Portfolio"
 
+enableGitInfo = true
+
 # Appearance settings
 theme = 'auto'
 colorPalette = 'gruvebox'
