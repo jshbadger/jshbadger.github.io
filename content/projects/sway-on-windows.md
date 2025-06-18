@@ -1,15 +1,18 @@
 +++
 title = 'Sway on Windows'
 date = 2025-06-17T22:00:40-06:00
+toc = true
+author = 'Jacob Stewart'
+autonumber = true
 lastmod = 2025-06-18T22:00:40-06:00
 draft = false
 +++
 
 One line summary: A guide to setup Sway on Windows through WSL 
 
-## 0. Prerequisite Notes
+## Prerequisite Notes
 This guide assumes a basic understanding of using terminals. Hypothetically, a complete novice *could* follow this guide successfully, but it would be strange for a complete novice to be interested in installing [Sway](https://swaywm.org/). Perhaps the novice reader stumbled on this guide and is curious what it is about. For this curious reader, you are free to read through the guide, though I suggest going through Software Carpentry's [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson before seriously considering setting up Sway.
-## 1. Install WSL
+## Install WSL
 I am following the [install instructions from Microsoft](https://learn.microsoft.com/en-us/windows/wsl/install) to install WSL. 
 
 WSL is powerful even outside of Sway. For example, you can mount drives formatted for Linux (ext4, btrfs, etc) using WSL. 
@@ -28,13 +31,13 @@ After downloading and installing WSL, you will have to reboot your machine to fi
 If the terminal scares you, or you prefer a GUI to decide which distribution to use, distributions can be installed through the Microsoft Store. I have never installed WSL from the Microsoft Store, but I have used it to download additional distributions.
 ### Installing Any Distribution
 If your distribution is neither listed in PowerShell nor in the Microsoft Store, [this guide](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro) provides a method for any Linux distribution to be installed (I assume if the desired distribution matches your [CPU architecture](https://dev.to/bhaveshgoyal182/arm-vs-x86-whats-the-difference-and-why-it-matters-in-2025-1efn)).
-## 2. Setup the Linux Distribution
+## Setup the Linux Distribution
 Upon reboot, the installation will finish for your distribution. With Debian, the loading bar was stuck on "Installing: 0%" for a while during one of my installs. Giving it around 5 minutes, the install eventually completed.
 
 You will be asked to provide a username and password for the distribution. Note that this username and password is separate from your Windows's user, along with nearly all the files in your Linux distribution. Find out more about using files and commands between operating systems [here](https://learn.microsoft.com/en-us/windows/wsl/filesystems).
 
 After providing login credentials, it is best practice to update everything. On Debian based distros, use `sudo apt update && sudo apt upgrade -y`.
-## 3. Installing Sway and PowerToys
+## Installing Sway and PowerToys
 ### Installing Sway
 Installing Sway on Debian and Ubuntu is easy: just run
 ```Bash
@@ -49,7 +52,7 @@ If you are unfamiliar with Sway (and i3), Sway relies heavily on a modifier key.
 
 [Download and install PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/). Once installed, open it (it will open by default after install) and navigate to `Keyboard Manager` (under `Input/Output` when opening from scratch rather than opening after install). Enable it and click `Remap a key`. We will be remapping Caps Lock to Num Lock. If you want to keep Caps Lock, find another key on the keyboard you are willing to sacrifice and map it to Num Lock. If you want to keep Num Lock, then the next best option is to remap to Alt. Alt isn't a great target, as Linux distros use it as well, but it's better than nothing.
 
-## 4. Setting Up Sway
+## Setting Up Sway
 The following instructions are developed for Debian. Different distros might have slight variations for the locations of Sway install files, but the principles should be the same.
 
 Sway operates from a single config file. The default config file is located at `/etc/sway/config`. The user defined config file is expected to be located at `~/.config/sway/config`. If this file does not exist, Sway uses the default config file.
@@ -115,7 +118,7 @@ A cool feature is the scratchpad which can be accessed with `mod+minus`. By defa
 A more advanced feature in Sway/i3 is to create a sort of sub-group of windows. For example, let's say I want to split the windows in half, but on the left I want one window, and on the right I want two. This can be done by opening the first two windows, moving to the window on the right and pressing `mod+v`. You'll notice the bottom of the current highlighted window is brighter than the other edges. The next window that is added will be placed on this highlighted side below. You'll notice that you can organize these windows on the right without affecting the window on the left (`mod+w`, `mod+e`, etc.). They are effectively in there own sub-group. To select the subgroup, use `mod+a`. To move windows out of the subgroup, use `mod+Shift+<Left Arrow/h>` to pull it back out. Once all windows have been moved out of the sub-group, the sub-group will dissolve. You can do this same procedure to put a window to the right instead of below by replacing `mod+v` with `mod+b`.
 
 Other controls can be deduced from the Sway config file, [i3 docs](https://i3wm.org/docs/), or the internet.
-## 5. Customizing and Enhancing Sway
+## Customizing and Enhancing Sway
 Sway, like i3, is highly customizable. And nearly all of it can be done in the ~/.config/sway/config file. This is great if you use many different computers, as a single .config directory can control an entire working environment, making it quick and easy to transfer between nearly any Linux OS.
 
 Anything not included here is likely on the [Sway Wiki](https://github.com/swaywm/sway/wiki) or in somesone else's config file on GitHub.
